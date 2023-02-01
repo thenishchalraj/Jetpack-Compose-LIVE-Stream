@@ -194,8 +194,8 @@ class LiveActivity : ComponentActivity() {
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Icon(
-                    modifier = Modifier.size(16.dp),
-                    painter = painterResource(id = R.drawable.ic_baseline_front_hand_24),
+                    modifier = Modifier.size(24.dp).padding(vertical = 4.dp),
+                    painter = painterResource(id = R.drawable.ic_baseline_remove_red_eye_24),
                     contentDescription = "viewers watching"
                 )
                 Text(
@@ -217,8 +217,8 @@ class LiveActivity : ComponentActivity() {
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Icon(
-                    modifier = Modifier.size(16.dp),
-                    painter = painterResource(id = R.drawable.ic_baseline_front_hand_24),
+                    modifier = Modifier.size(24.dp).padding(vertical = 4.dp),
+                    painter = painterResource(id = R.drawable.baseline_card_giftcard_24),
                     contentDescription = "gifts received"
                 )
                 Text(

@@ -10,11 +10,8 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
-import com.thenishchalraj.jetpackcomposelivestream.ui.hello.HelloActivity
 import com.thenishchalraj.jetpackcomposelivestream.ui.live.LiveActivity
-import com.thenishchalraj.jetpackcomposelivestream.ui.sports.SportsActivity
 import com.thenishchalraj.jetpackcomposelivestream.ui.theme.JetpackComposeTutorialTheme
-import com.thenishchalraj.jetpackcomposelivestream.ui.toDo.ToDoActivity
 
 class MainActivity: ComponentActivity() {
 
@@ -31,21 +28,6 @@ class MainActivity: ComponentActivity() {
     private fun setUpLayoutForActivities() {
         val mContext = LocalContext.current
         Column {
-            Button(onClick = {
-                mContext.startActivity(Intent(mContext, HelloActivity::class.java))
-            }) {
-                Text(text = "Hello Screen")
-            }
-            Button(onClick = {
-                mContext.startActivity(Intent(mContext, SportsActivity::class.java))
-            }) {
-                Text(text = "Sports Screen")
-            }
-            Button(onClick = {
-                mContext.startActivity(Intent(mContext, ToDoActivity::class.java))
-            }) {
-                Text(text = "ToDo Screen")
-            }
             Button(onClick = {
                 mContext.startActivity(Intent(mContext, LiveActivity::class.java))
             }) {
