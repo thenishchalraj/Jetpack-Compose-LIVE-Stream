@@ -19,6 +19,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.thenishchalraj.jetpackcomposelivestream.data.SampleData
@@ -43,8 +44,9 @@ private fun CommentsItem(comment: CommentsData) {
     Row(
         modifier = Modifier
             .padding(horizontal = 8.dp, vertical = 2.dp)
-            .background(Color.LightGray, shape = RoundedCornerShape(16.dp)),
-        verticalAlignment = Alignment.CenterVertically
+            .background(Color.LightGray, shape = RoundedCornerShape(16.dp))
+            .padding(start = 4.dp, end = 4.dp, top = 4.dp, bottom = 4.dp),
+        verticalAlignment = Alignment.Top
     ) {
         Image(
             painter = painterResource(id = comment.avatar),
@@ -61,6 +63,12 @@ private fun CommentsItem(comment: CommentsData) {
             fontSize = 12.sp,
             fontWeight = FontWeight.SemiBold
         )
-        Text(text = comment.comment, color = Color.White)
+        Text(text = comment.comment, color = Color.White, fontSize = 12.sp,)
     }
+}
+
+@Preview
+@Composable
+fun previewComments() {
+    LiveComments()
 }

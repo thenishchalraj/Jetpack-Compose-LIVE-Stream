@@ -32,7 +32,7 @@ fun LiveIndicator() {
 }
 
 @Composable
-private fun FollowersIndicator() {
+private fun ViewersIndicator() {
     Row(
         modifier = Modifier
             .padding(vertical = 2.dp)
@@ -44,18 +44,20 @@ private fun FollowersIndicator() {
         verticalAlignment = Alignment.CenterVertically
     ) {
         Icon(
-            modifier = Modifier.size(24.dp).padding(vertical = 4.dp),
-            painter = painterResource(id = R.drawable.baseline_groups_2_24),
-            contentDescription = "followers gained"
+            modifier = Modifier
+                .size(24.dp)
+                .padding(vertical = 4.dp),
+            painter = painterResource(id = R.drawable.ic_baseline_remove_red_eye_24),
+            contentDescription = "viewers watching"
         )
         Text(
             modifier = Modifier
                 .padding(top = 2.dp, bottom = 2.dp, start = 8.dp, end = 10.dp),
-            text = "200K",
+            text = "2M",
             fontSize = 12.sp,
-            color = Color.Black
+            color = Color.Black,
         )
-    } // followers gained
+    } // viewers watching
 }
 
 @Composable
@@ -115,7 +117,7 @@ private fun GiftsIndicator() {
 }
 
 @Composable
-private fun ViewersIndicator() {
+private fun FollowersIndicator() {
     Row(
         modifier = Modifier
             .padding(vertical = 2.dp)
@@ -127,20 +129,18 @@ private fun ViewersIndicator() {
         verticalAlignment = Alignment.CenterVertically
     ) {
         Icon(
-            modifier = Modifier
-                .size(24.dp)
-                .padding(vertical = 4.dp),
-            painter = painterResource(id = R.drawable.ic_baseline_remove_red_eye_24),
-            contentDescription = "viewers watching"
+            modifier = Modifier.size(24.dp).padding(vertical = 4.dp),
+            painter = painterResource(id = R.drawable.baseline_groups_2_24),
+            contentDescription = "followers gained"
         )
         Text(
             modifier = Modifier
                 .padding(top = 2.dp, bottom = 2.dp, start = 8.dp, end = 10.dp),
-            text = "2M",
+            text = "200K",
             fontSize = 12.sp,
-            color = Color.Black,
+            color = Color.Black
         )
-    } // viewers watching
+    } // followers gained
 }
 
 @Composable
