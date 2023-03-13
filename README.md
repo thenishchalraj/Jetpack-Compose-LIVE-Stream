@@ -1,9 +1,8 @@
 # Jetpack-Compose-LIVE-Stream
-Live streaming application using Jetpack compose
 
-<img src=>
+<img src=https://cdn-images-1.medium.com/max/1600/1*jqLEwHP1bvRlUkfm9Ephkw.png>
 
-about
+Just a demo application showing how to build different components of a Live Stream Screen using Jetpack Compose.
 
 ## To check for detailed blog [Click here](blog url here)
 
@@ -17,4 +16,4 @@ Find the [Demo App here](add download link)
 Your contributions are always welcome! Please have a look at the [contribution guidelines](CONTRIBUTING.md) first. :tada:
 
 # License
-The MIT License (MIT) 2023. Please have a look at the [LICENSE.md](LICENSE.md) for more details.
+Please have a look at the [LICENSE.md](LICENSE.md) for more details.
