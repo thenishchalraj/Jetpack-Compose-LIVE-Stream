@@ -6,9 +6,6 @@ Just a demo application showing how to build different components of a Live Stre
 
 ## To check for detailed blog [Click here](blog url here)
 
-# Developer Notes
-add notes here
-
 # Sample App
 Find the [Demo App here](add download link)
 
